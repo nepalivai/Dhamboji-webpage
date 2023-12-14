@@ -19,7 +19,7 @@
 1. Clone the repository:
 ```bash
 git clone https://github.com/nepalivai/Dhamboji-webpage.git
-cd ScrapeIt
+cd Dhamboji-webpage
 ```
    
 2. Install dependencies:
