@@ -28,7 +28,7 @@ npm install
 ```
 4. Start the app:
 ```bash
-npm run dev
+npm start
   ```
 ## Author
 * <a href="https://https://github.com/nepalivai"><i>Rishav karmacharya</i></a>
