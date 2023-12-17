@@ -13,7 +13,7 @@
 
 - Node.js (https://nodejs.org/) installed on your machine.
 
-### Thinking about contrubuting.
+## Thinking about contrubuting.
 
 Please read the following page before <a href="./contrubute.md"> **Contibution**.</a> 
 
