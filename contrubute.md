@@ -24,7 +24,7 @@ Once you have forked your repository, go to your profile inside the repository s
 Once you locate your repository, you must clone it to your local machine.
 
 ```sh
-git clone https://github.com/YOUR-USERNAME/ScrapeIt.git
+git clone https://github.com/--YOUR-USERNAME--/Dhamboji-webpage.git
 ```
 
 Congratulations! You have successfully cloned the repository to your local machine. You can now make changes, add new features, or fix issues in the codebase.
