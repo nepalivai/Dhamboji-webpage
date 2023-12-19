@@ -3,7 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      colors: { void: "#252525", primary: "#00000", secondary: "#fffff" },
+      colors: {
+        primary: "#00000",
+        secondary: "#ffc812",
+        darky: "#fab23d",
+        jet: "#383838",
+        eblack: "#262626",
+      },
       backgroundImage: {
         hero: "url('/image/logo.jpg')",
       },
