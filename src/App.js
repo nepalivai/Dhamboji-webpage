@@ -1,10 +1,12 @@
 import "./index.css";
 import clz from "./image/clz.jpg";
-import Nav from "./GLOBAL/Nav.js";
+import Nav from "./GLOBAL/Nav/Nav.js";
 import { useState } from "react";
 
 function App() {
-  const [car] = [{ clz }];
+  {
+    /* news  */
+  }
   const [cards] = useState([
     {
       title: "Dhamboji 101",
@@ -30,8 +32,41 @@ function App() {
       text: `something something`,
     },
   ]);
+  {
+    /* course  */
+  }
+  const [course] = useState([
+    {
+      title: "Dhamboji 101",
+      text: `2 Dogs die in a car accident whwile an ugly man watches them without same`,
+    },
+    {
+      title: "card-2",
+      text: `something something`,
+    },
+    {
+      image: "",
+      title: "card-3",
+      text: `something something`,
+    },
+    {
+      image: "",
+      title: "card-4",
+      text: `something something`,
+    },
+    {
+      image: "",
+      title: "card-5",
+      text: `something something`,
+    },
+    {
+      image: "",
+      title: "card-6",
+      text: `something something`,
+    },
+  ]);
   return (
-    <div className="App overflow-hidden ">
+    <div className="App ">
       <Nav />
       {/*-------------------------Banner section ----------------------*/}
       <div className="h-screen z-5">
@@ -91,7 +126,7 @@ function App() {
               </p>
             </div>
             <div className="event_list bg-primary w-[100%] h-[400px] text-4xl font-bold flex overflow-auto">
-              <div className="cards flex items-center translate-x-3 gap-4 ">
+              <div className="cards flex items-center translate-x-3 gap-4 scrollbar-thin scrollbar-track-primary scrollbar-corner-secondary scrollbar-thumb-slate-300  ">
                 {cards.map((card, i) => (
                   <div
                     key={i}
@@ -134,14 +169,73 @@ function App() {
         </div>
       </div>
       {/*--------------courses------------------*/}
-      <div className=" h-screen  bg-slate-400 bg-opacity-30 pt-6 ">
-        <div className="oval h-[450px] w-[450px] bg-red-500 opacity-90 rounded-full z-[-5] float-right -translate-y-[150px] translate-x-[110px] "></div>
+      <div className=" h-auto w-[100%]  pt-6 overflow-hidden ">
+        <div className="oval h-[300px] w-[300px] bg-red-500 opacity-90 absolute rounded-full z-[-5] right-0 -translate-y-[150px]  "></div>
         <p className="text-[50px] font-extrabold text-center opacity-100 text-black translate-x-[10px]">
           Courses
         </p>
+        <div className=" grid grid-cols-3 grid-rows-2 gap-5 p-10">
+          {course.map((course, i) => (
+            <div
+              key={i}
+              className="card h-[auto] w-80 bg-white  shadow-xl flex flex-col rounded-2xl "
+            >
+              <div>
+                <img
+                  className=" w-[100%] block object-cover rounded-t-2xl"
+                  src={clz}
+                ></img>
+              </div>
+              <div className="pt-4">
+                <h3 className="title h-auto w-[100%] text-eblack text-3xl font-bold text-left pl-3">
+                  {course.title}
+                </h3>
+                <p className="text h-auto w-[100%] text-jet text-xl font-semibold text-left p-3 ">
+                  {course.text}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div></div>
       {/*--------------------------------*/}
+      <div>
+        <div class="section-body h-auto">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <div class="embeded_map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.2554797542!2d81.6262151743212!3d28.077748975972206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3998671773c7e34f%3A0xe85908dc0d1c6717!2sDhambojhi%20Secondary%20School!5e0!3m2!1sen!2snp!4v1685325210940!5m2!1sen!2snp"
+                  width="600"
+                  height="450"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>{" "}
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="list-unstyled contact-details">
+                <li>
+                  <span class="fa fa-map-marker"></span> Nepalgunj-1, Dhambojhi,
+                  Waterpark, Nepalgunj, Banke, Nepal
+                </li>
+                <li>
+                  <span class="fa fa-user"></span> Dhambojhi Secondary School
+                </li>
+                <li>
+                  <span class="fa fa-phone"></span>{" "}
+                  <a href="tel:+977-81-525491">+977-81-525491</a>
+                </li>
+                <li>
+                  <span class="fa fa-phone"></span>{" "}
+                  <a href="tel:+977-81-402030"> +977-81-402030</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

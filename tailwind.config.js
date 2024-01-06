@@ -9,11 +9,15 @@ module.exports = {
         darky: "#fab23d",
         jet: "#383838",
         eblack: "#262626",
+        nepal: "#744742",
       },
       backgroundImage: {
         hero: "url('/image/logo.jpg')",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // scrollbar plugin
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };
