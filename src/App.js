@@ -1,6 +1,7 @@
 import "./index.css";
 import clz from "./image/clz.jpg";
-import Nav from "./GLOBAL/Nav/Nav.js";
+import Nav from "./GLOBAL/Nav.js";
+import Footer from "./GLOBAL/Footer.js";
 import { useState } from "react";
 
 function App() {
@@ -200,9 +201,15 @@ function App() {
       </div>
       {/*--------------------------------*/}
       <div>
-        <div class="section-body h-auto">
+        <div class="section-body h-auto ">
+          <p className="text-[50px] font-extrabold text-center opacity-100 text-black translate-x-[10px]">
+            LOCATION
+          </p>
           <div class="row">
             <div class="col-md-8 col-sm-6 col-xs-12">
+              <div>
+                <p>Contact Details of Dhambojhi Secondary School, Banke</p>
+              </div>
               <div class="embeded_map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.2554797542!2d81.6262151743212!3d28.077748975972206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3998671773c7e34f%3A0xe85908dc0d1c6717!2sDhambojhi%20Secondary%20School!5e0!3m2!1sen!2snp!4v1685325210940!5m2!1sen!2snp"
@@ -236,6 +243,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
