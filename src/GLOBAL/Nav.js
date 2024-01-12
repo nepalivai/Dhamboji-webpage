@@ -1,5 +1,7 @@
 import React from "react";
 import logo from ".././image/logo.png";
+import about from "../page/about.js";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -26,7 +28,6 @@ function Nav() {
           </a>
           <li className=" text-white hover:text-[20px] hover:text-cyan-300 ">
             <span className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              {" "}
               About us
             </span>
           </li>
@@ -34,12 +35,6 @@ function Nav() {
             <span className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               {" "}
               Contact
-            </span>
-          </li>
-          <li className="text-white hover:text-[20px] hover:text-cyan-300 ">
-            <span className="bg-left-bottom bg-gradient-to-r from-pink-500 to-pink-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-              {" "}
-              Blog
             </span>
           </li>
           <li>

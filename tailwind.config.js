@@ -4,20 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00000",
+        primary: "#252525",
         secondary: "#ffc812",
         darky: "#fab23d",
         jet: "#383838",
         eblack: "#262626",
-        nepal: "#744742",
       },
-      backgroundImage: {
-        hero: "url('/image/logo.jpg')",
+      boxShadow: {
+        button: "  10px 5px 5px rgba(255,200,18,1)",
+        whitebutton: " 10px 5px 5px rgba(0,0,0,0.5)",
       },
     },
   },
-  plugins: [
-    // scrollbar plugin
-    require("tailwind-scrollbar")({ nocompatible: true }),
-  ],
+  plugins: [],
 };
