@@ -4,7 +4,12 @@ import Nav from "./GLOBAL/Nav.js";
 import Footer from "./GLOBAL/Footer.js";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { falocation } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLocationDot,
+  faMailBulk,
+  faPhone,
+  faSchool,
+} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   {
@@ -259,22 +264,24 @@ function App() {
             <div class="flex flex-col p-3">
               <ul class=" p-3">
                 <li className="py-3 font-bold text-[25px]">
-                  <FontAwesomeIcon icon="fa-solid fa-location-dot" />
+                  <FontAwesomeIcon icon={faLocationDot} className=" pr-3" />
                   Nepalgunj-1, Dhambojhi, Waterpark, Nepalgunj, Banke, Nepal
                 </li>
                 <li className="py-2 font-medium text-[20px]">
-                  <span class="fa fa-user"></span> Dhambojhi Secondary School
+                  <FontAwesomeIcon icon={faSchool} className=" pr-3" />
+                  Dhambojhi Secondary School
                 </li>
                 <li className="py-2 font-medium text-[20px]">
-                  <span class="fa fa-phone"></span>{" "}
+                  <FontAwesomeIcon icon={faPhone} className=" pr-3" />
                   <a href="tel:+977-81-525491">+977-81-525491</a>
                 </li>
                 <li className="py-2 font-medium text-[20px]">
-                  <span class="fa fa-phone"></span>{" "}
+                  <FontAwesomeIcon icon={faPhone} className=" pr-3" />
                   <a href="tel:+977-81-402030"> +977-81-402030</a>
                 </li>
                 <li className="py-2 font-medium text-[20px]">
-                  <span class="fa fa-phone"></span> Gmail
+                  <FontAwesomeIcon icon={faMailBulk} className=" pr-3" />
+                  Gmail
                 </li>
               </ul>
             </div>
