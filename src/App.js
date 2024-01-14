@@ -119,28 +119,18 @@ function App() {
       {/*-------------------------Banner section ----------------------*/}
       <div className="h-screen z-5">
         <div
-          className="hero h-screen shadow-inner  bg-cover grid grid-cols-2 gap-4 bg-no-repeat bg-center max-lg:flex max-lg:flex-col"
+          className="hero h-screen shadow-inner  bg-cover grid grid-cols-2 gap-4 bg-no-repeat bg-center p-8 max-xl:flex max-xl:flex-col max-lg:justify-between "
           style={{ backgroundImage: `url(${clz})` }}
         >
-          <div className="flex justify-center">
-            <div className="flex flex-col justify-end bottom-[15%] absolute align-middle">
-              <p className=" text-center text-[45px] top-0 font-bold text-white ">
-                Don't stop until,
-              </p>
-              <p className=" text-center text-[50px] top-0 font-bold text-white ">
-                you're proud.
-              </p>
-            </div>
-          </div>
           <div className="flex justify-center text-white items-center">
-            <div className="intro h-auto rounded-3xl backdrop-blur-[8px] shadow-2xl w-[80%] p-6 flex items-center bg-white/10 flex-col justify-center  gap-2 ">
+            <div className="intro h-auto w-auto  rounded-3xl backdrop-blur-[8px]  sm:mt-[60px] shadow-2xl py-3 px-10 flex items-center bg-white/10 flex-col justify-center  gap-2 ">
               <div className="top-0 right-0 ">
-                <p className=" text-6xl font-extrabold text-right text-black">
+                <p className=" text-6xl w-[100%] max-lg:text-6xl font-extrabold text-left text-black">
                   WELCOME
                 </p>
-                <div className="w-[200px] h-[3px] -translate-x-[0px] bg-black rounded-md float-right"></div>
+                <div className="w-[200px] h-[3px] -translate-x-[0px] bg-black rounded-md float-left"></div>
               </div>
-              <div className=" font-bold text-right text-[55px] ">
+              <div className=" font-bold text-left text-[55px] ">
                 <p> DHAMBOJI </p>
                 <p>HIGH SCHOOL </p>
               </div>
@@ -149,6 +139,16 @@ function App() {
                   Learn more
                 </button>
               </a>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="flex flex-col justify-end pb-10 align-middle">
+              <p className=" text-center md:text-[45px] max-sm:text-[40px] top-0 font-bold text-white ">
+                Don't stop until,
+              </p>
+              <p className=" text-center text-[50px] top-0 font-bold text-white ">
+                you're proud.
+              </p>
             </div>
           </div>
         </div>
