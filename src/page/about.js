@@ -1,15 +1,15 @@
 import React from "react";
-import Nav from "../GLOBAL/Nav";
-import Footer from "../GLOBAL/Footer";
 
-function about() {
+function About() {
   return (
     <>
-      <Nav />
-      <div>sdfsd</div>
-      <Footer />
+      <div>
+        <p className="text-6xl h-[400px] text-center flex justify-center items-center">
+          under construct dharai kam garerw mero aakha na fod
+        </p>
+      </div>
     </>
   );
 }
 
-export default about;
+export default About;

@@ -14,7 +14,6 @@ function Footer() {
     name: "",
     email: "",
     message: "",
-    address: "",
   });
 
   const handleChange = (e) => {
@@ -29,8 +28,8 @@ function Footer() {
   };
 
   return (
-    <div className=" flex flex-col h-auto justify-center bg-jet items-center text-white pt-4">
-      <div className=" grid h-[300px] grid-flow-col grid-col-4 w-[100%] ">
+    <div className=" flex flex-col h-auto justify-center bg-jet items-center text-white  ">
+      <div className=" grid h-[auto] lg:grid-flow-col grid-col-4 w-[100%] pt-3 pb-2 md:grid md:grid-flow-row ">
         <div className=" items-center flex justify-center flex-col ">
           <img src={logo} className="h-40 rounded-lg"></img>
           <p className="p-5 text-lg opacity-70"> Waterpark, Nepalgunj, Banke</p>
@@ -46,7 +45,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="  flex flex-col ">
+        <div className="  flex flex-col lg:justify-start lg:items-start md:justify-center md:items-center ">
           <p className=" text-xl font-bold ">QUICK LINKS</p>
           <div className=" grid-flow-row grid gap-4 p-5 text-lg">
             <p>Home</p>
@@ -55,7 +54,7 @@ function Footer() {
             <p>News</p>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:justify-center md:items-center lg:justify-start lg:items-start">
           <p className="text-xl font-bold">CONTACT US</p>
           <div>
             <form onSubmit={handleSubmit} className="gap-3">
@@ -91,13 +90,13 @@ function Footer() {
               <br></br>
               <input
                 type="submit"
-                className=" bg-jet text-white px-5 py-2 text-xl rounded-md hover:translate-y-[-5px] transition hover:shadow-button mt-3"
+                className=" bg-eblack active:bg-jet text-white px-5 py-2 text-xl rounded-md hover:translate-y-[-5px] transition hover:shadow-button mt-3"
               />
             </form>
           </div>
         </div>
       </div>
-      <div className=" flex justify-between font-sans text-xs bg-eblack w-full text-center">
+      <div className=" flex justify-between font-sans text-xs bg-eblack w-full p-1 text-center">
         <div className="">
           <FontAwesomeIcon icon={faCopyright} className=" pr-3 " />
           2024 Dhambojhi high school. All Rights Reserved.
