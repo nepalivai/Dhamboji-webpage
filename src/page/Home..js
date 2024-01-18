@@ -9,6 +9,7 @@ import {
   faPhone,
   faSchool,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Home() {
   {
@@ -117,11 +118,11 @@ function Home() {
       {/*-------------------------Banner section ----------------------*/}
       <div className="z-5">
         <div
-          className="hero h-screen shadow-inner  bg-cover grid grid-cols-2 gap-4 bg-no-repeat bg-center p-8 max-xl:flex max-xl:flex-col max-lg:justify-between "
+          className="hero h-[900px] lg:h-screen shadow-inner  bg-cover bg-no-repeat bg-center p-8 flex flex-col justify-between lg:flex-row "
           style={{ backgroundImage: `url(${clz})` }}
         >
           <div className="flex justify-center text-white items-center">
-            <div className="intro h-auto w-auto  rounded-3xl backdrop-blur-[8px]  sm:mt-[60px] shadow-2xl py-3 px-10 flex items-center bg-white/10 flex-col justify-center  gap-2 ">
+            <div className="intro h-auto w-auto  rounded-3xl backdrop-blur-[8px] mt-[60px] shadow-2xl py-3 px-10 flex items-center bg-white/10 flex-col justify-center  gap-2 ">
               <div className="top-0 right-0 ">
                 <p className=" text-6xl w-[100%] max-lg:text-6xl font-extrabold text-left text-black">
                   WELCOME
@@ -141,7 +142,7 @@ function Home() {
           </div>
           <div className="flex justify-center">
             <div className="flex flex-col justify-end pb-10 align-middle">
-              <p className=" text-center md:text-[45px] max-sm:text-[40px] top-0 font-bold text-white ">
+              <p className=" text-center text-[50px] top-0 font-bold text-white ">
                 Don't stop until,
               </p>
               <p className=" text-center text-[50px] top-0 font-bold text-white ">
@@ -154,22 +155,22 @@ function Home() {
       {/*-------------NEWS-------------------*/}
       <div className="news flex h-auto w-[100%] items-start bg-transparent pt-4">
         <div className="oval h-[450px] w-[450px] bg-red-500 opacity-90 absolute rounded-full z-[-5] -translate-y-[150px] translate-x-[-110px] flex justify-end items-center"></div>
-        <div className="container h-auto w-[100%] text-center flex md:flex-row flex-col ">
-          <div className="latest w-[70%] flex-col items-center justify-between pr-3">
+        <div className="container flex-col h-auto w-[100%] text-center flex md:flex-col lg:flex-row items-center ">
+          <div className="latest w-[100%] lg:w-[70%] pr-3">
             <div className="ti flex flex-row justify-between">
               <p className=" text-[50px] font-extrabold opacity-100 text-black translate-x-[10px]">
                 Latest News
               </p>
-              <p className=" text-[25px] flex items-center font-extrabold opacity-60 text-blue-600  translate-x-[-10px] underline">
-                SEE ALL
+              <p className=" text-[25px] flex items-center font-extrabold opacity-60 text-blue-600  translate-x-[-10px] hover:text-[27px] ease-linear transition-all underline">
+                <Link to="/News">SEE ALL</Link>
               </p>
             </div>
             <div className="event_list w-[100%] h-[400px] text-4xl font-bold flex overflow-auto">
-              <div className="cards flex items-center translate-x-3 gap-4 scrollbar-thin scrollbar-track-primary scrollbar-corner-secondary scrollbar-thumb-slate-300  ">
+              <div className="cards flex items-center translate-x-3 gap-4">
                 {cards.map((card, i) => (
                   <div
                     key={i}
-                    className="card h-[90%] w-80 bg-opacity-20 bg-white backdrop-blur-[15px] shadow-xl flex flex-col rounded-2xl "
+                    className="card w-[300px] h-[90%] lg:w-80 bg-opacity-20 bg-white backdrop-blur-[15px] shadow-xl flex flex-col rounded-2xl "
                   >
                     <div>
                       <div className="absolute right-0 bg-white h-auto rounded-md w-auto ">
@@ -194,7 +195,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="upcomeing w-[30%] flex flex-col">
+          <div className="upcomeing w-[30%] m-10 flex flex-col">
             <div className="flex content-center justify-center">
               <p className="text-[35px] font-serif font-bold opacity-100 text-black  whitespace-nowrap">
                 Upcomeing Event
@@ -213,15 +214,15 @@ function Home() {
       </div>
       {/*--------------courses------------------*/}
       <div className=" h-auto w-[100%]  py-6 overflow-hidden ">
-        <div className="oval h-[300px] w-[300px] bg-red-500 opacity-90 absolute rounded-full z-[-5] right-0 -translate-y-[150px]  "></div>
+        <div className="oval h-[300px] w-[300px] bg-red-500 opacity-90 absolute rounded-full z-[-5] right-0 -translate-y-[150px] "></div>
         <p className="text-[50px] font-extrabold text-center opacity-100 text-black translate-x-[10px]">
           Courses
         </p>
-        <div className=" grid grid-cols-3 grid-rows-2 gap-5 p-10">
+        <div className=" grid justify-center grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
           {course.map((course, i) => (
             <div
               key={i}
-              className="card h-[auto] w-80 bg-white shadow-2xl flex flex-col rounded-2xl "
+              className="card h-[auto] w-full md:w-80 bg-white shadow-2xl flex flex-col rounded-2xl "
             >
               <div>
                 <img
@@ -249,7 +250,7 @@ function Home() {
           <p className="text-[50px] font-extrabold text-center opacity-100 text-black">
             LOCATION
           </p>
-          <div class="flex flex-col md:flex-row px-5">
+          <div class="grid md:grid-flow-row lg:grid-cols-2  lg:text-left text-center items-center ">
             <div class="embeded_map p-3 w-full">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.2554797542!2d81.6262151743212!3d28.077748975972206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3998671773c7e34f%3A0xe85908dc0d1c6717!2sDhambojhi%20Secondary%20School!5e0!3m2!1sen!2snp!4v1685325210940!5m2!1sen!2snp"
@@ -271,12 +272,9 @@ function Home() {
                 </li>
                 <li className="py-2 font-medium text-[20px]">
                   <FontAwesomeIcon icon={faPhone} className=" pr-3" />
-                  <a href="tel:+977-81-525491">+977-81-525491</a>
+                  +977-81-525491
                 </li>
-                <li className="py-2 font-medium text-[20px]">
-                  <FontAwesomeIcon icon={faPhone} className=" pr-3" />
-                  <a href="tel:+977-81-402030"> +977-81-402030</a>
-                </li>
+                <li className="py-2 font-medium text-[20px]">+977-81-402030</li>
                 <li className="py-2 font-medium text-[20px]">
                   <FontAwesomeIcon icon={faMailBulk} className=" pr-3" />
                   Gmail
@@ -314,6 +312,7 @@ function Home() {
                         href="where its taken from--------------------------------"
                         tabindex="0"
                       >
+                        {/* make link  a variable and put the varibale in the link */}
                         <span class="absolute inset-0"></span>
                         {review.name}
                       </a>
