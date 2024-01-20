@@ -29,7 +29,7 @@ function Nav() {
           <FontAwesomeIcon icon={open ? faClose : faBars} />
         </div>
         <ul
-          className={` bg-opacity-20 lg:w-auto backdrop:blur-xl bg-black z-10 lg:bg-transparent lg:bg-opacity-0 shadow-xl lg:contents lg:items-center pt-5 pb-5 absolute lg:static text-4xl lg:text-[25px] w-auto right-5 text-center px-5 lg:pl-0 transition-all duration-500 ease-linear ${
+          className={` bg-opacity-60 lg:w-auto backdrop:blur-xl bg-black z-10 lg:bg-transparent lg:bg-opacity-0 shadow-xl lg:contents lg:items-center pt-5 pb-5 absolute lg:static text-4xl lg:text-[25px] w-auto right-5 text-center px-5 lg:pl-0 transition-all duration-500 ease-linear ${
             open ? "top-16 " : "top-[-350px]"
           }`}
         >

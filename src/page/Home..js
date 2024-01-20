@@ -118,7 +118,7 @@ function Home() {
       {/*-------------------------Banner section ----------------------*/}
       <div className="z-5">
         <div
-          className="hero h-[900px] lg:h-screen shadow-inner  bg-cover bg-no-repeat bg-center p-8 flex flex-col justify-between lg:flex-row "
+          className="hero h-screen sm:h-[900px] lg:h-screen shadow-inner  bg-cover bg-no-repeat bg-center p-8 flex flex-col justify-between lg:flex-row "
           style={{ backgroundImage: `url(${clz})` }}
         >
           <div className="flex justify-center text-white items-center">
