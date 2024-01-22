@@ -143,10 +143,10 @@ function Home() {
           <div className="flex justify-center">
             <div className="flex flex-col justify-end pb-10 align-middle">
               <p className=" text-center text-[50px] top-0 font-bold text-white ">
-                Don't stop until,
+                The future belongs to those who,
               </p>
               <p className=" text-center text-[50px] top-0 font-bold text-white ">
-                you're proud.
+                believe in the beauty of their dreams.
               </p>
             </div>
           </div>
@@ -218,7 +218,7 @@ function Home() {
         <p className="text-[50px] font-extrabold text-center opacity-100 text-black translate-x-[10px]">
           Courses
         </p>
-        <div className=" grid justify-center grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
+        <div className=" grid justify-items-center grid-flow-row md:grid-cols-2 lg:grid-cols-3 gap-5 p-10">
           {course.map((course, i) => (
             <div
               key={i}

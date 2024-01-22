@@ -1,5 +1,4 @@
 import "./index.css";
-import clz from "./image/clz.jpg";
 import Nav from "./GLOBAL/Nav.js";
 import Footer from "./GLOBAL/Footer.js";
 import Home from "./page/Home..js";
