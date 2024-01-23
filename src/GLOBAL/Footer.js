@@ -113,12 +113,16 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className=" flex justify-between font-sans text-xs bg-eblack w-full p-1 text-center">
-        <div className="">
+      <div className=" flex flex-col lg:flex-row justify-between font-sans text-xs bg-eblack w-full p-1 text-center">
+        <div className=" text-4xl lg:text-xl">
           <FontAwesomeIcon icon={faCopyright} className=" pr-3 " />
           2024 Dhambojhi high school. All Rights Reserved.
-        </div>
-        <p className="text-right">Designed by Rishav karmacharya</p>
+        </div>{" "}
+        <a href="https://github.com/nepalivai">
+          <p className=" text-center text-3xl mt-4 lg:mt-0 lg:text-right lg:text-xl">
+            Designed by Rishav karmacharya
+          </p>
+        </a>
       </div>
     </div>
   );
