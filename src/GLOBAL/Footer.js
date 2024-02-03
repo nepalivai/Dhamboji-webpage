@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [details, setDetails] = useState({
@@ -51,10 +52,18 @@ function Footer() {
           <div className="  flex flex-col lg:justify-start lg:items-start justify-center items-center ">
             <p className=" text-5xl lg:text-xl font-bold ">QUICK LINKS</p>
             <div className=" grid-flow-row grid gap-4 p-5 text-4xl lg:text-lg">
-              <p>Home</p>
-              <p>About us</p>
-              <p>Contact</p>
-              <p>News</p>
+              <p>
+                <Link to="/">Home</Link>
+              </p>
+              <p>
+                <Link to="/about">About us</Link>
+              </p>
+              <p>
+                <Link to="/contact"> Contact</Link>
+              </p>
+              <p>
+                <Link to="/news">News</Link>
+              </p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-3 lg:justify-start lg:items-start">

@@ -43,7 +43,7 @@ function About() {
     },
     {
       image:
-        "https://scontent.fkep2-1.fna.fbcdn.net/v/t39.30808-6/248302375_10159349361419663_8426482057173474106_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=783fdb&_nc_ohc=yk0OO--fJbsAX_Ft0Eq&_nc_ht=scontent.fkep2-1.fna&oh=00_AfAwWMZtzAC2W0NWI5JaSX1ZEO6PsX_tD5zU6O-B5k6vtw&oe=65B3398D",
+        "https://scontent.fkep2-1.fna.fbcdn.net/v/t39.30808-6/248302375_10159349361419663_8426482057173474106_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=783fdb&_nc_ohc=UQru8_GHGiIAX9RF6WF&_nc_ht=scontent.fkep2-1.fna&oh=00_AfC6Z8_Rzd4UFJ5CzVXyIudBLd6fae3f9oTyzGdMYlOy-g&oe=65BD1CCD",
       name: "Pradeep shree",
       position: "Techinical codinator",
       text: `something something`,
@@ -61,7 +61,7 @@ function About() {
     },
     {
       image:
-        "https://scontent.fkep2-1.fna.fbcdn.net/v/t39.30808-6/358135247_3217443321882500_2371272295679870206_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=iJoEAcFDZcIAX_h3Hse&_nc_ht=scontent.fkep2-1.fna&oh=00_AfAFR1ZvHOBhqh8oxa6-ONbkNoyFYFpdTzh1wYR6iQLlOg&oe=65B3DAD2",
+        "https://scontent.fkep2-1.fna.fbcdn.net/v/t39.30808-6/399321270_3291364141157084_1285192963301809012_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=IOP_JYRtctkAX8Hqijl&_nc_ht=scontent.fkep2-1.fna&oh=00_AfCx1_zfb2X4hjR_1UiH1yC6k58VlO_0T3q2FwPOyx3qVw&oe=65BE4022",
       name: "मदन उपाध्याय",
       position: "High-school techer",
       text: `something something`,
