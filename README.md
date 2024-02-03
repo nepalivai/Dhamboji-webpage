@@ -4,7 +4,7 @@
 ## Tech Stack
 
 - **React:** Frontend framework for building user interfaces.
-- **Typescript:** For backend development.
+- **Javascript:** For backend development.
 - **Tailwind:** For styling the components.
 
 ## Getting Started
